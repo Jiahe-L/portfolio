@@ -10,4 +10,7 @@ class Blog(models.Model):
 
 	def __str__(self):
 		return self.title
+
+	def shout_text(self):
+		return self.text[:60] + '...'	#对文本显示一部分
     
