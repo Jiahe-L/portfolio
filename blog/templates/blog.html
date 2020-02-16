@@ -106,7 +106,8 @@
   </section>
   <div class="container">
   	{% for blog in blogs.all %}
-	<h2><a href="">{{ blog.title }}</a></h2>	<!--链接为a标签-->
+	<h2><a href="{{ blog.id }}">{{ blog.title }}</a></h2>	
+	<!--链接为a标签，href后var+tab-->
 	{{ blog.date }}
 	<br>
 	<img src="{{ blog.image.url }} " height="300">
